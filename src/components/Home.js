@@ -4,7 +4,7 @@ import FontList from '../FontList';
 
 const Home = () => {
   const[fonts, setFonts] = useState([
-    { name: '1234', user: 'new1', date_created: 'annelise', id: 3}
+    { name: 'My Font 1', user: 'Annelise', date_created: '09/01/23', id: 3}
   ]);
 
   const handleDelete = (id) => {
@@ -25,8 +25,8 @@ const Home = () => {
 
     return (
         <div className="home">
-            <h1>HOME COMPONENT Home Page</h1>
-           { fonts && <FontList fonts={fonts} title="All Fonts Here" handleDelete={handleDelete} /> }
+            <h2>Your created fonts:</h2>
+           { fonts && <FontList fonts={fonts} title="AllFonts" handleDelete={handleDelete} /> }
         </div>
     );
 }

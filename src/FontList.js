@@ -10,7 +10,7 @@ const FontList = (props) => {
         <div className="fontList">
             {fonts.map((font) => (
                 <div className="fontPreview" key={font.id}>
-                    <h2>{ font.name }</h2>
+                    <p>Font Name: { font.name }</p>
                     <p> Created on: { font.date_created }</p>
                 </div>
             ))}
