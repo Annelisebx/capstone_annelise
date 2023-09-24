@@ -1,0 +1,16 @@
+{
+  "fonts": [
+      {
+          "name": "font1",
+          "user": "annelise",
+          "date_created": "2023",
+          "id": 1234
+      },
+      {
+          "name": "font2",
+          "user": "annelise",
+          "date_created": "march 2023",
+          "id": 2345
+      }
+  ]
+}
