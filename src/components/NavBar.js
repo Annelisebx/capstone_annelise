@@ -1,6 +1,5 @@
 import React from 'react';
 import './Navbar.css'; // Create this file for styling if needed
-import About from './About';
 
 const Navbar = () => {
   return (
@@ -12,9 +11,9 @@ const Navbar = () => {
         <br></br>
         <a href="/About">About Page</a>
         <br/>
-        <a href="/create">Create New Font</a>
+        <a href="/Create">Create New Font</a>
         <br/>
-        <a href="/myFonts">My Fonts</a>
+        <a href="/MyFonts">My Fonts</a>
       </div>
 
     </div>

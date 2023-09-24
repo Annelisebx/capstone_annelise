@@ -1,34 +1,25 @@
 // Home.js
-import { useState, useEffect } from 'react';
-import FontList from '../FontList';
+import React from 'react';
+import './Home.css';
 
-const Home = () => {
-  const[fonts, setFonts] = useState([
-    { name: 'My Font 1', user: 'Annelise', date_created: '09/01/23', id: 3}
-  ]);
+function Home() {
+  return (
+    <div className="home-container">
+      <header className="header">
+        <h1>Welcome to My React App</h1>
+      </header>
+      <main className="main-content">
+        <section className="feature">
+          <h2>Hello</h2>
+          <p>This is a continuation of my Spring 2023, Capstone Project</p>
+        </section>
 
-  const handleDelete = (id) => {
-    const newFonts = fonts.filter(font => font.id !== id);
-    setFonts(newFonts);
-  }
-
-  useEffect(() => {
-    fetch('http://localhost:8000/fonts')
-    .then(res => {
-        return res.json();
-    })
-    .then(data => {
-        console.log(data)
-    })
-    console.log('use effect ran');
-  }, []);
-
-    return (
-        <div className="home">
-            <h2>Your created fonts:</h2>
-           { fonts && <FontList fonts={fonts} title="AllFonts" handleDelete={handleDelete} /> }
-        </div>
-    );
+      </main>
+      <footer className="footer">
+        <p>Please see about page for additional details</p>
+      </footer>
+    </div>
+  );
 }
 
 export default Home;
